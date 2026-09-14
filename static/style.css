@@ -1,0 +1,17 @@
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+img {
+
+    border-radius: 5px;
+    margin: 10px auto;
+}
+
+audio {
+    height: 100px;
+    width: 70%;
+}
