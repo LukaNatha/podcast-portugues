@@ -6,11 +6,15 @@
     </head>
 
     <body>
+        <header>
+            <h1>RÁDIO À MANIVELA</h1>
+        </header>
         <main>
             {% block main %}{% endblock %}
         </main>
         <footer>
             <p>Site desenvolvido para fins educacionais.</p>
+            <address>Contato: nicholas.m@escolar.ifrn.edu.br</address>
         </footer>
         <script src="{{ url_for('static', filename='script.js') }}"></script>
     </body>

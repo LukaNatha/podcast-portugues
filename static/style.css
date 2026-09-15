@@ -1,12 +1,45 @@
-main {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lora:wght@400;500;600&display=swap');
+
+:root {
+    --marrom_fundo: #8a5826;
+    --marrom_escuro: #3E2A1F;
+    --bege: #F3E8D5
+    --fonte-titulo: 'Rye', serif;
+    --fonte-texto: 'Lora', serif;
 }
 
-img {
+html, body {
+    margin: 0;
+    min-height: 100%;
+}
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--marrom_fundo);
+}
+
+main {
+    flex: 1;
+}
+
+.lista {
+    text-align: left;
+}
+
+.episodio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+}
+
+.logoep {
     border-radius: 5px;
     margin: 10px auto;
 }
@@ -14,4 +47,55 @@ img {
 audio {
     height: 100px;
     width: 70%;
+}
+
+footer {
+    background-color: var(--marrom_escuro);
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: var(--fonte-titulo);
+    color: white;
+    background-color: var(--marrom_escuro);
+    padding: 20px;
+    border-radius: 5px;
+    width: fit-content;
+    margin: 20px auto;
+}
+
+h2 {
+    font-family: var(--fonte-titulo);
+    color: white;
+    background-color: var(--marrom_escuro);
+    padding: 20px;
+    border-radius: 5px;
+    width: fit-content;
+    margin-left: 30px;
+}
+
+p, address {
+    font-size: 10px;
+    font-family: var(--fonte-texto);
+    color: white
+}
+
+.ep1 {
+    background-color: var(--marrom_escuro);
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    width: fit-content;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.logo {
+    height: 200px;
+}
+
+.play {
+    height: 200px;
 }

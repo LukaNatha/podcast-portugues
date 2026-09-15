@@ -1,5 +1,16 @@
 {% extends "base.html" %}
 
 {% block main %}
-    <a href="{{ url_for('ep') }}">Assistir o ep.1</a>
+
+    <article class="lista">
+
+        <h2>Episódios Disponíveis: </h2>
+
+        <article class="ep1">
+            <img class="logo" src="{{ url_for('static', filename='images/logo.png')}}">
+            <h2>Episódio 01 - Acidentes que viraram invenções</h2>
+            <a href="{{ url_for('ep') }}"><img class="play" src="{{ url_for('static', filename='images/play-removebg-preview.png')}}"></a>
+        </article>
+
+    </article>
 {% endblock %}

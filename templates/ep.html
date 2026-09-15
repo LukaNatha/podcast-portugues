@@ -2,11 +2,15 @@
 
 {% block main %}
 
-<img src="{{ url_for('static', filename='images/logo.png') }}">
+<article class="episodio">
 
-<audio controls>
-    <source src="audio.mp3" type="audio/mpeg">
-</audio>
+    <img class="logoep" src="{{ url_for('static', filename='images/logo.png') }}">
 
-<p>Legenda</p>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+
+    <p>Legenda</p>
+    
+</article>
 {% endblock %}
