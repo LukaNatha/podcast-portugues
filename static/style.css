@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lora:wght@400;500;600&display=swap');
 
 :root {
-    --marrom_fundo: #8a5826;
-    --marrom_escuro: #3E2A1F;
-    --bege: #F3E8D5
-    --fonte-titulo: 'Rye', serif;
+    --marrom_fundo: #B99B72;
+    --marrom_escuro: #1F140F;
+    --bege: #F3E8D5;
+    --borda: 1px solid var(--marrom_fundo);
+    --fonte-subtitulo: 'Glacial Indifference', sans-serif;
     --fonte-texto: 'Lora', serif;
+    --fonte-titulo: 'Bree Serif', serif;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     min-height: 100%;
 }
@@ -17,15 +20,39 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: var(--marrom_fundo);
+    background-color: var(--marrom_escuro);
 }
 
 main {
     flex: 1;
 }
 
+header {
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: var(--marrom_fundo);
+}
+
+h2 {
+    width: fit-content;
+    margin-left: 30px;
+    font-family: var(--fonte-titulo);
+    border-radius: 5px;
+}
+
 .lista {
     text-align: left;
+}
+
+.tipo {
+    height: 200px;
+    margin-top: 50px;
+    border-radius: 10px;
 }
 
 .episodio {
@@ -35,67 +62,101 @@ main {
     text-align: center;
 }
 
-header {
+.eps {
+    font-family: var(--fonte-subtitulo);
+    color: var(--bege);
+}
+
+.titulo {
+    font-family: var(--fonte-subtitulo);
+    color: var(--marrom_escuro);
+}
+
+.titulo1 {
+    max-width: 900px;
+    margin: 20px auto 5px;
+    font-family: var(--fonte-titulo);
+    font-size: 70px;
     text-align: center;
+    color: var(--bege);
 }
 
-.logoep {
-    border-radius: 5px;
-    margin: 10px auto;
-}
-
-audio {
-    height: 100px;
-    width: 70%;
-}
-
-footer {
-    background-color: var(--marrom_escuro);
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-h1 {
+.subtitulo {
+    margin: 0 auto 20px;
     font-family: var(--fonte-titulo);
-    color: white;
-    background-color: var(--marrom_escuro);
-    padding: 20px;
-    border-radius: 5px;
-    width: fit-content;
-    margin: 20px auto;
-}
-
-h2 {
-    font-family: var(--fonte-titulo);
-    color: white;
-    background-color: var(--marrom_escuro);
-    padding: 20px;
-    border-radius: 5px;
-    width: fit-content;
-    margin-left: 30px;
-}
-
-p, address {
-    font-size: 10px;
-    font-family: var(--fonte-texto);
-    color: white
+    font-size: 50px;
+    text-align: center;
+    color: var(--bege);
 }
 
 .ep1 {
-    background-color: var(--marrom_escuro);
-    padding: 5px;
-    border-radius: 10px;
     display: flex;
+    align-items: center;
+    gap: 25px;
     width: fit-content;
-    text-align: center;
-    margin-left: 30px;
+    min-height: 180px;
+    margin: 30px;
+    box-sizing: border-box;
+    background-color: var(--marrom_fundo);
+    border-radius: 3px;
+    box-shadow: 5px 5px 0 rgba(243, 232, 213, 0.15);
+}
+
+.logoep {
+    height: 450px;
+    margin: 10px auto;
+    border-radius: 5px;
 }
 
 .logo {
-    height: 200px;
+    height: 210px;
+    border-radius: 3px;
 }
 
 .play {
     height: 200px;
+}
+
+audio {
+    width: 70%;
+    height: 55px;
+
+    margin: 30px auto;
+    padding: 6px;
+
+    box-sizing: border-box;
+
+    background-color: var(--marrom_fundo);
+    border: 2px solid var(--bege);
+    border-radius: 30px;
+
+    box-shadow:
+        0 4px 0 var(--bege),
+        0 8px 15px rgba(0, 0, 0, 0.25);
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+audio:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 0 var(--bege),
+        0 10px 18px rgba(0, 0, 0, 0.3);
+}
+
+p,
+address {
+    font-family: var(--fonte-texto);
+    font-size: 10px;
+    color: var(--marrom_escuro);
+}
+
+a {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+a:hover {
+    transform: scale(1.08);
 }
