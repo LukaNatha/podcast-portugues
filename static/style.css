@@ -20,7 +20,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: var(--marrom_escuro);
+    background-color: var(--marrom_fundo);
 }
 
 main {
