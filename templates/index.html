@@ -9,12 +9,13 @@
     <article class="lista">
 
         <h2 class="eps">Episódios Disponíveis: </h2>
-
-        <article class="ep1">
-            <img class="logo" src="{{ url_for('static', filename='images/logo.png')}}">
-            <h2 class="titulo">Episódio 01: Acidentes que viraram invenções</h2>
-            <a href="{{ url_for('ep') }}"><img class="play" src="{{ url_for('static', filename='images/play-removebg-preview.png')}}"></a>
-        </article>
+        <a href="{{ url_for('ep')}}">
+            <article class="ep1">
+                <img class="logo" src="{{ url_for('static', filename='images/logo.png')}}">
+                <p class="titulo">Acidentes que viraram invenções</p>
+                <p class="interlocutores">Por Cadu e Vinícius</p>
+            </article>
+        </a>
 
     </article>
 {% endblock %}

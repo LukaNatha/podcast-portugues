@@ -7,13 +7,17 @@
     <h2 class="titulo1">Episódio 01:</h2>
     <h2 class="subtitulo">Acidentes que viraram invenções</h2>
 
-    <img class="logoep" src="{{ url_for('static', filename='images/logo.png') }}">
+    <figure>
+
+        <img class="logoep" src="{{ url_for('static', filename='images/logo.png') }}">
+
+    </figure>
 
     <audio controls>
         <source src="audio.mp3" type="audio/mpeg">
     </audio>
 
-    <p>Legenda</p>
+    <p class="legenda">Legenda</p>
     
 </article>
 {% endblock %}
