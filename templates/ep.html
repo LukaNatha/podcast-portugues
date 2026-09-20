@@ -15,11 +15,19 @@
 
     </figure>
 
-    <audio controls>
-        <source src="audio.mp3" type="audio/mpeg">
-    </audio>
+    <audio id="audio" controls>
+    <source src="{{ url_for('static', filename='audio/podcast.mp3') }}" type="audio/mpeg">
 
-    <p class="legenda">Legenda</p>
+    <track
+        src="{{ url_for('static', filename='audio/legenda.vtt') }}"
+        kind="subtitles"
+        srclang="pt-BR"
+        label="Português"
+        default
+    >
+</audio>
+
+<p id="legenda"></p>
     
 </article>
 {% endblock %}
